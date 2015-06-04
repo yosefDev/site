@@ -1,0 +1,49 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html,body,ul {margin: 0;padding: 0;}
+
+.section { width: 100%; max-width: 960px; margin: 0 auto; }
+.content {display: inline-block;width: 100%;}
+
+.sec1 .content .gallery {overflow: hidden;position: relative;height: 173px;margin: 0 auto;}
+.sec1 .content .gallery ul li {height: 175px; width: 233px;position: absolute;opacity: 0;background-position: 0 0; background-repeat: no-repeat;background-size:233px auto;cursor: pointer;}
+.sec1 .content .gallery.aActive ul li#a {opacity: 1;}
+.sec1 .content .gallery.bActive ul li#b {opacity: 1;}
+.sec1 .content .gallery.cActive ul li#c {opacity: 1;}
+.sec1 .content .gallery.dActive ul li#d {opacity: 1;}
+.sec1 .content .gallery.eActive ul li#e {opacity: 1;}
+.sec1 .content .gallery.fActive ul li#f {opacity: 1;}
+.sec1 .content .gallery ul.gallery-content li.active {opacity: 1;}
+/*en*/
+.sec1 .content .gallery ul li#a  {background-image: url("img/11276027_1137277782964692_520902548_n.jpg");}
+.sec1 .content .gallery ul li#b  {background-image: url("img/11280615_1137277609631376_1816889014_n.jpg");}
+.sec1 .content .gallery ul li#c  {background-image: url("img/11281793_1137277736298030_517422174_n.jpg");}
+.sec1 .content .gallery ul li#d  {background-image: url("img/11287083_1137277769631360_499758802_n.jpg");}
+.sec1 .content .gallery ul li#e  {background-image: url("img/11287240_1137277629631374_1602427480_n.jpg");}
+.sec1 .content .gallery ul li#f  {background-image: url("img/11292711_1137277746298029_184352658_n.jpg");}
+
+.sec1 .content .arrow { text-align: center; width: 100%; }
+.sec1 .content .arrow ul li {  margin: 2px 0;  padding: 0 2px; position: relative; background-image: none !important; border-radius: 50%; display: inline-block; height: 13px; width: 13px; background-color: #dedede; cursor: pointer;}
+.sec1 .content .arrow ul li.active {height: 13px; width: 13px; }
+.sec1 .content .arrow ul li.a.active { background-color: #b6d12c;}
+.sec1 .content .arrow ul li.b.active { background-color: #a04465;}
+.sec1 .content .arrow ul li.c.active { background-color: #ef8e1f;}
+.sec1 .content .arrow ul li.d.active { background-color: #55cbc5;}
+.sec1 .content .arrow ul li.e.active { background-color: #d1642c;}
+.sec1 .content .arrow ul li.f.active { background-color: #f87500;}
+
+.sec2 .content .nav {width: 100%;text-align: center;}
+.sec2 .content .nav span {width: 18%;height: 20px;float: left;background-color: antiquewhite;margin: 0 1%;}
+.sec2 .content .nav span:hover {background-color: cadetblue;}
+
+.sec3 .content .box {width: 100%;height: 100px;
+  opacity: 0;position: absolute;}
+.sec3 .content .box.showBox {transition: all 1.5s linear;opacity: 1;}
+.sec3 .content .box.home {background-color:blue}
+.sec3 .content .box.abuotUs {background-color:green}
+.sec3 .content .box.info {background-color:firebrick}
+.sec3 .content .box.imageGallery {background-color:saddlebrown}
+.sec3 .content .box.contactUs {background-color:tan}
